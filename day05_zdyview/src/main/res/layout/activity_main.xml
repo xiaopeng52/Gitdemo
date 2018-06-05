@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:sn="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.day05_zdyview.MainActivity">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.example.day05_zdyview.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--引用自己的自定义控件,必须是包名.自定义控件类名-->
+    <!--    <com.sn.a4.MyToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />-->
+
+    <!--G.最后自定义属性,在XML定义引用的图片-->
+    <com.example.day05_zdyview.MyToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        sn:switch_background="@drawable/switch_background"
+        sn:slide_button="@drawable/slide_button"
+
+        />
+
+</LinearLayout>
